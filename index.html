@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI & Design Showcase - Web Porto Jihad</title>
+    <meta name="description" content="A comprehensive UI Kit and Design System showcase demonstrating modern web design principles, components, and patterns.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Sticky Top Nav -->
+    <nav class="showcase-nav navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="#">
+                <i class="fa-solid fa-palette me-2"></i>UI<span class="text-gradient">Kit</span>
+            </a>
+            <div class="d-flex gap-2 ms-auto">
+                <a href="#colors" class="nav-pill">Colors</a>
+                <a href="#typography" class="nav-pill">Type</a>
+                <a href="#components" class="nav-pill">Components</a>
+                <a href="#dashboard" class="nav-pill">Dashboard</a>
+                <a href="#mobile" class="nav-pill">Mobile</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===========================
+         HERO SECTION
+         =========================== -->
+    <section id="hero" class="hero-section d-flex align-items-center">
+        <div class="container py-5 relative-z">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-up">
+                    <span class="badge badge-glass mb-4 px-3 py-2">✨ Design System v1.0</span>
+                    <h1 class="display-2 fw-black mb-4 lh-1">
+                        Crafting <span class="text-gradient">Beautiful</span><br>
+                        User Experiences
+                    </h1>
+                    <p class="lead text-muted mb-5">A curated UI Kit showcasing design principles, components, and patterns — built with precision and care for modern interfaces.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#components" class="btn btn-gradient btn-lg rounded-pill px-5 shadow-glow">Explore Components</a>
+                        <a href="#dashboard" class="btn btn-glass btn-lg rounded-pill px-5">View Dashboards</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+                    <!-- Floating UI Preview Cards -->
+                    <div class="hero-preview-area position-relative mx-auto">
+                        <div class="preview-card-main glass-card rounded-4 p-4 shadow-xl">
+                            <div class="d-flex align-items-center gap-3 mb-4">
+                                <div class="avatar-ring">
+                                    <div class="avatar-inner d-flex align-items-center justify-content-center">JD</div>
+                                </div>
+                                <div>
+                                    <p class="fw-bold mb-0">Jihad Dev</p>
+                                    <small class="text-muted">UI/UX Designer & Developer</small>
+                                </div>
+                                <span class="badge bg-success ms-auto rounded-pill">• Online</span>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1"><span class="small">Projects Done</span><span class="small fw-bold">87%</span></div>
+                                <div class="progress rounded-pill" style="height:8px"><div class="progress-bar bg-gradient" style="width:87%"></div></div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1"><span class="small">Client Satisfaction</span><span class="small fw-bold">96%</span></div>
+                                <div class="progress rounded-pill" style="height:8px"><div class="progress-bar" style="width:96%; background: linear-gradient(90deg,#f43f5e,#f97316)"></div></div>
+                            </div>
+                            <div class="row text-center mt-4 border-top pt-3 g-0">
+                                <div class="col-4"><p class="fw-bold text-primary mb-0">50+</p><small class="text-muted">Projects</small></div>
+                                <div class="col-4 border-start border-end"><p class="fw-bold text-danger mb-0">12+</p><small class="text-muted">Clients</small></div>
+                                <div class="col-4"><p class="fw-bold text-warning mb-0">5★</p><small class="text-muted">Rating</small></div>
+                            </div>
+                        </div>
+                        <!-- Floating mini cards -->
+                        <div class="floating-mini-card card-a glass-card rounded-3 p-3 shadow">
+                            <small class="text-muted d-block mb-1">Revenue</small>
+                            <h5 class="fw-bold mb-0">$48.2k <span class="badge bg-success-subtle text-success small">↑ 12%</span></h5>
+                        </div>
+                        <div class="floating-mini-card card-b glass-card rounded-3 p-3 shadow">
+                            <small class="text-muted d-block mb-1">New Users</small>
+                            <h5 class="fw-bold mb-0">1,240 <span class="badge bg-primary-subtle text-primary small">↑ 8%</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- BG Shapes -->
+        <div class="bg-blob blob-1"></div>
+        <div class="bg-blob blob-2"></div>
+        <div class="bg-blob blob-3"></div>
+    </section>
+
+    <!-- ===========================
+         COLORS SECTION
+         =========================== -->
+    <section id="colors" class="py-section bg-white">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-label">Design Tokens</span>
+                <h2 class="section-title">Color <span class="text-gradient">Palette</span></h2>
+                <p class="section-desc">A curated set of colors that form the foundation of the design system.</p>
+            </div>
+
+            <div class="row g-4 mt-3">
+                <!-- Primary -->
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="color-card">
+                        <div class="color-swatch" style="background: linear-gradient(135deg, #4F46E5, #0ea5e9)"></div>
+                        <div class="color-info">
+                            <p class="fw-bold mb-1">Primary</p>
+                            <code>#4F46E5 → #0ea5e9</code>
+                            <p class="text-muted small mt-1">Indigo to Sky gradient — action, focus</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Danger -->
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="150">
+                    <div class="color-card">
+                        <div class="color-swatch" style="background: linear-gradient(135deg, #f43f5e, #f97316)"></div>
+                        <div class="color-info">
+                            <p class="fw-bold mb-1">Accent</p>
+                            <code>#f43f5e → #f97316</code>
+                            <p class="text-muted small mt-1">Rose to Orange — alerts, emphasis</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Success -->
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="color-card">
+                        <div class="color-swatch" style="background: linear-gradient(135deg, #10b981, #06b6d4)"></div>
+                        <div class="color-info">
+                            <p class="fw-bold mb-1">Success</p>
+                            <code>#10b981 → #06b6d4</code>
+                            <p class="text-muted small mt-1">Emerald to Cyan — positive states</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Neutrals -->
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="250">
+                    <div class="color-card">
+                        <div class="d-flex">
+                            <div class="color-swatch-sm" style="background:#f8fafc"></div>
+                            <div class="color-swatch-sm" style="background:#94a3b8"></div>
+                            <div class="color-swatch-sm" style="background:#475569"></div>
+                            <div class="color-swatch-sm" style="background:#0f172a"></div>
+                        </div>
+                        <div class="color-info">
+                            <p class="fw-bold mb-1">Neutrals</p>
+                            <code>Slate 50 → 900</code>
+                            <p class="text-muted small mt-1">Base text, backgrounds, borders</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================
+         TYPOGRAPHY SECTION
+         =========================== -->
+    <section id="typography" class="py-section bg-light">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-label">Type System</span>
+                <h2 class="section-title">Typography <span class="text-gradient">Scale</span></h2>
+            </div>
+            <div class="row mt-5 g-4">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="card border-0 rounded-4 shadow-sm p-4">
+                        <h6 class="text-muted text-uppercase small fw-bold mb-4">Outfit — Display Font</h6>
+                        <p class="type-d1 mb-1">Display 1</p>
+                        <p class="type-d2 mb-1">Display 2</p>
+                        <p class="type-h1 mb-1">Heading 1</p>
+                        <p class="type-h2 mb-1">Heading 2</p>
+                        <p class="type-h3 mb-3">Heading 3</p>
+                        <hr>
+                        <h6 class="text-muted text-uppercase small fw-bold mb-3 mt-3">Inter — Body Font</h6>
+                        <p class="type-body-lg mb-1">Body Large — Clean, readable 1.1rem</p>
+                        <p class="type-body mb-1">Body Regular — Default 1rem at 1.75 line height</p>
+                        <p class="type-body-sm mb-1">Body Small — Captions, labels 0.875rem</p>
+                        <p class="type-mono mb-0"><code>JetBrains Mono — Code snippets, technical data</code></p>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                    <div class="card border-0 rounded-4 shadow-sm p-4 h-100">
+                        <h6 class="text-muted text-uppercase small fw-bold mb-4">Font Weights & Styles</h6>
+                        <p class="fw-light fs-5 mb-2">Light 300 — Outfit Thin</p>
+                        <p class="fw-normal fs-5 mb-2">Regular 400 — Base reading</p>
+                        <p class="fw-medium fs-5 mb-2">Medium 500 — Labels & UI</p>
+                        <p class="fw-semibold fs-5 mb-2">SemiBold 600 — Subheadings</p>
+                        <p class="fw-bold fs-5 mb-2">Bold 700 — Headings</p>
+                        <p class="fw-black fs-5 mb-2">Black 900 — Hero Impact</p>
+                        <hr>
+                        <h6 class="text-muted text-uppercase small fw-bold mb-3 mt-3">Special Styles</h6>
+                        <p class="text-gradient fs-4 fw-bold mb-2">Gradient Text Effect</p>
+                        <p class="text-muted letter-wide mb-0">WIDE · TRACKING · UPPERCASE · LABELS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================
+         COMPONENTS SECTION
+         =========================== -->
+    <section id="components" class="py-section bg-white">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-label">UI Kit</span>
+                <h2 class="section-title">UI <span class="text-gradient">Components</span></h2>
+            </div>
+
+            <!-- Buttons -->
+            <div class="component-block" data-aos="fade-up">
+                <h5 class="component-label">Buttons</h5>
+                <div class="component-preview">
+                    <div class="d-flex flex-wrap gap-3 align-items-center">
+                        <button class="btn btn-gradient rounded-pill px-4">Primary</button>
+                        <button class="btn btn-accent rounded-pill px-4">Accent</button>
+                        <button class="btn btn-success-grad rounded-pill px-4">Success</button>
+                        <button class="btn btn-outline-primary rounded-pill px-4">Outline</button>
+                        <button class="btn btn-glass rounded-pill px-4">Glass</button>
+                        <button class="btn btn-gradient rounded-pill px-4" disabled>Disabled</button>
+                        <button class="btn btn-gradient rounded-circle icon-btn"><i class="fa-solid fa-plus"></i></button>
+                        <button class="btn btn-outline-danger rounded-pill px-4"><i class="fa-solid fa-trash me-2"></i>Delete</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Badges & Tags -->
+            <div class="component-block" data-aos="fade-up">
+                <h5 class="component-label">Badges & Tags</h5>
+                <div class="component-preview">
+                    <div class="d-flex flex-wrap gap-2 align-items-center">
+                        <span class="badge badge-primary-grad rounded-pill px-3 py-2">Design</span>
+                        <span class="badge badge-accent-grad rounded-pill px-3 py-2">Frontend</span>
+                        <span class="badge badge-success-grad rounded-pill px-3 py-2">Laravel</span>
+                        <span class="badge bg-warning text-dark rounded-pill px-3 py-2">WordPress</span>
+                        <span class="badge bg-dark rounded-pill px-3 py-2">React Native</span>
+                        <span class="badge badge-glass text-dark rounded-pill px-3 py-2">Figma</span>
+                        <span class="badge bg-success-subtle text-success rounded-pill px-3 py-2">• Active</span>
+                        <span class="badge bg-danger-subtle text-danger rounded-pill px-3 py-2">• Offline</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cards -->
+            <div class="component-block" data-aos="fade-up">
+                <h5 class="component-label">Cards</h5>
+                <div class="component-preview">
+                    <div class="row g-4">
+                        <!-- Stat Card -->
+                        <div class="col-md-3">
+                            <div class="stat-card gradient-card-1 text-white rounded-4 p-4">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <p class="opacity-75 small mb-1">Total Revenue</p>
+                                        <h3 class="fw-bold mb-0">$48,200</h3>
+                                    </div>
+                                    <div class="stat-icon"><i class="fa-solid fa-dollar-sign"></i></div>
+                                </div>
+                                <p class="mt-3 mb-0 opacity-75 small"><i class="fa-solid fa-arrow-up me-1"></i>12% vs last month</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="stat-card gradient-card-2 text-white rounded-4 p-4">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <p class="opacity-75 small mb-1">Total Users</p>
+                                        <h3 class="fw-bold mb-0">1,240</h3>
+                                    </div>
+                                    <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+                                </div>
+                                <p class="mt-3 mb-0 opacity-75 small"><i class="fa-solid fa-arrow-up me-1"></i>8% new signups</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="stat-card gradient-card-3 text-white rounded-4 p-4">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <p class="opacity-75 small mb-1">Orders</p>
+                                        <h3 class="fw-bold mb-0">320</h3>
+                                    </div>
+                                    <div class="stat-icon"><i class="fa-solid fa-bag-shopping"></i></div>
+                                </div>
+                                <p class="mt-3 mb-0 opacity-75 small"><i class="fa-solid fa-arrow-up me-1"></i>5% vs yesterday</p>
+                            </div>
+                        </div>
+                        <!-- Glass Card -->
+                        <div class="col-md-3">
+                            <div class="glass-card rounded-4 p-4 h-100 d-flex flex-column justify-content-center">
+                                <i class="fa-solid fa-chart-line text-primary fa-2x mb-3"></i>
+                                <h5 class="fw-bold">Glassmorphism</h5>
+                                <p class="text-muted small mb-0">Frosted glass effect with backdrop-filter blur and transparency.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form Elements -->
+            <div class="component-block" data-aos="fade-up">
+                <h5 class="component-label">Form Elements</h5>
+                <div class="component-preview">
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <label class="form-label fw-medium">Text Input</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-white"><i class="fa-solid fa-user text-muted"></i></span>
+                                <input type="text" class="form-control custom-input" placeholder="Full Name">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label fw-medium">Email Input</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-white"><i class="fa-solid fa-envelope text-muted"></i></span>
+                                <input type="email" class="form-control custom-input" placeholder="you@example.com">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label fw-medium">Select Input</label>
+                            <select class="form-select custom-input">
+                                <option>Select role...</option>
+                                <option>Designer</option>
+                                <option>Developer</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label fw-medium">Toggle Switch</label>
+                            <div class="d-flex flex-column gap-2 mt-1">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" checked>
+                                    <label class="form-check-label">Dark Mode</label>
+                                </div>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label">Notifications</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <label class="form-label fw-medium">Range Slider</label>
+                            <input type="range" class="form-range mt-2" min="0" max="100" value="65">
+                            <div class="d-flex justify-content-between small text-muted"><span>0%</span><span>65%</span><span>100%</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alerts -->
+            <div class="component-block" data-aos="fade-up">
+                <h5 class="component-label">Alerts & Notifications</h5>
+                <div class="component-preview">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="alert-custom alert-success-custom d-flex align-items-center gap-3">
+                                <i class="fa-solid fa-circle-check fs-5"></i>
+                                <div><strong>Success!</strong> Your profile has been updated.</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="alert-custom alert-error-custom d-flex align-items-center gap-3">
+                                <i class="fa-solid fa-circle-xmark fs-5"></i>
+                                <div><strong>Error!</strong> Something went wrong. Please try again.</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="alert-custom alert-info-custom d-flex align-items-center gap-3">
+                                <i class="fa-solid fa-circle-info fs-5"></i>
+                                <div><strong>Info:</strong> New features are available in version 2.0.</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="alert-custom alert-warning-custom d-flex align-items-center gap-3">
+                                <i class="fa-solid fa-triangle-exclamation fs-5"></i>
+                                <div><strong>Warning!</strong> Your subscription expires in 3 days.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================
+         DASHBOARD PREVIEW
+         =========================== -->
+    <section id="dashboard" class="py-section bg-dark-navy">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-label text-primary">Admin UI</span>
+                <h2 class="section-title text-white">Dashboard <span class="text-gradient">Preview</span></h2>
+                <p class="section-desc text-white-50">A visual showcase of a typical admin dashboard panel design.</p>
+            </div>
+
+            <div class="dashboard-mockup rounded-4 overflow-hidden shadow-xl mt-5" data-aos="zoom-in" data-aos-delay="200">
+                <!-- Dashboard Top Bar -->
+                <div class="dash-topbar d-flex align-items-center justify-content-between px-4">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="dash-dot" style="background:#f43f5e"></div>
+                        <div class="dash-dot" style="background:#f97316"></div>
+                        <div class="dash-dot" style="background:#10b981"></div>
+                        <span class="text-white-50 small ms-3">Admin Dashboard — JihadDev</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                        <div class="dash-search"></div>
+                        <div class="dash-avatar">JD</div>
+                    </div>
+                </div>
+                <!-- Dashboard Body -->
+                <div class="dash-body d-flex">
+                    <!-- Sidebar -->
+                    <div class="dash-sidebar py-3">
+                        <div class="dash-menu-item active"><i class="fa-solid fa-grid-2"></i><span>Dashboard</span></div>
+                        <div class="dash-menu-item"><i class="fa-solid fa-chart-pie"></i><span>Analytics</span></div>
+                        <div class="dash-menu-item"><i class="fa-solid fa-users"></i><span>Users</span></div>
+                        <div class="dash-menu-item"><i class="fa-solid fa-bag-shopping"></i><span>Orders</span></div>
+                        <div class="dash-menu-item"><i class="fa-solid fa-gear"></i><span>Settings</span></div>
+                    </div>
+                    <!-- Main Content -->
+                    <div class="dash-main p-4 flex-grow-1">
+                        <!-- Stat Row -->
+                        <div class="row g-3 mb-4">
+                            <div class="col-3">
+                                <div class="dash-stat-card" style="background: linear-gradient(135deg,#4F46E5,#0ea5e9)">
+                                    <p class="dash-stat-label">Revenue</p>
+                                    <p class="dash-stat-value">$48.2k</p>
+                                    <p class="dash-stat-change">↑ 12%</p>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="dash-stat-card" style="background: linear-gradient(135deg,#f43f5e,#f97316)">
+                                    <p class="dash-stat-label">Orders</p>
+                                    <p class="dash-stat-value">320</p>
+                                    <p class="dash-stat-change">↑ 5%</p>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="dash-stat-card" style="background: linear-gradient(135deg,#10b981,#06b6d4)">
+                                    <p class="dash-stat-label">Users</p>
+                                    <p class="dash-stat-value">1,240</p>
+                                    <p class="dash-stat-change">↑ 8%</p>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="dash-stat-card" style="background: linear-gradient(135deg,#8b5cf6,#ec4899)">
+                                    <p class="dash-stat-label">Satisfaction</p>
+                                    <p class="dash-stat-value">96%</p>
+                                    <p class="dash-stat-change">↑ 2%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Chart Placeholder -->
+                        <div class="row g-3">
+                            <div class="col-8">
+                                <div class="dash-widget">
+                                    <p class="dash-widget-title">Monthly Revenue</p>
+                                    <div class="dash-chart-bars d-flex align-items-end gap-2 mt-3">
+                                        <?php $heights = [40, 65, 50, 80, 55, 90, 70, 85, 60, 95, 75, 88]; ?>
+                                        <?php foreach ([40,65,50,80,55,90,70,85,60,95,75,88] as $h): ?>
+                                            <div class="dash-bar" style="height:<?= $h ?>px; background: linear-gradient(0deg,#4F46E5,#0ea5e9); border-radius: 4px 4px 0 0; flex:1;"></div>
+                                        <?php endforeach; ?>
+                                        <div class="dash-bar" style="height:40px; background:linear-gradient(0deg,#4F46E5,#0ea5e9); border-radius:4px 4px 0 0; flex:1;"></div>
+                                        <div class="dash-bar" style="height:65px; background:linear-gradient(0deg,#4F46E5,#0ea5e9); border-radius:4px 4px 0 0; flex:1;"></div>
+                                        <div class="dash-bar" style="height:50px; background:linear-gradient(0deg,#4F46E5,#0ea5e9); border-radius:4px 4px 0 0; flex:1;"></div>
+                                        <div class="dash-bar" style="height:80px; background:linear-gradient(0deg,#4F46E5,#0ea5e9); border-radius:4px 4px 0 0; flex:1;"></div>
+                                        <div class="dash-bar" style="height:55px; background:linear-gradient(0deg,#4F46E5,#0ea5e9); border-radius:4px 4px 0 0; flex:1;"></div>
+                                        <div class="dash-bar" style="height:90px; background:linear-gradient(0deg,#4F46E5,#0ea5e9); border-radius:4px 4px 0 0; flex:1;"></div>
+                                        <div class="dash-bar" style="height:70px; background:linear-gradient(0deg,#4F46E5,#0ea5e9); border-radius:4px 4px 0 0; flex:1;"></div>
+                                        <div class="dash-bar" style="height:85px; background:linear-gradient(0deg,#4F46E5,#0ea5e9); border-radius:4px 4px 0 0; flex:1;"></div>
+                                        <div class="dash-bar" style="height:60px; background:linear-gradient(0deg,#4F46E5,#0ea5e9); border-radius:4px 4px 0 0; flex:1;"></div>
+                                        <div class="dash-bar" style="height:95px; background:linear-gradient(0deg,#4F46E5,#0ea5e9); border-radius:4px 4px 0 0; flex:1;"></div>
+                                        <div class="dash-bar" style="height:75px; background:linear-gradient(0deg,#4F46E5,#0ea5e9); border-radius:4px 4px 0 0; flex:1;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="dash-widget h-100">
+                                    <p class="dash-widget-title">Recent Activity</p>
+                                    <div class="dash-activity-item"><span class="dot-success"></span><span class="small text-white-50">New order #320</span></div>
+                                    <div class="dash-activity-item"><span class="dot-primary"></span><span class="small text-white-50">User registered</span></div>
+                                    <div class="dash-activity-item"><span class="dot-warning"></span><span class="small text-white-50">Payment pending</span></div>
+                                    <div class="dash-activity-item"><span class="dot-success"></span><span class="small text-white-50">Order shipped</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================
+         MOBILE APP PREVIEW
+         =========================== -->
+    <section id="mobile" class="py-section bg-light">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-label">React Native</span>
+                <h2 class="section-title">Mobile App <span class="text-gradient">UI</span></h2>
+                <p class="section-desc">Mobile-first designs compatible with React Native development.</p>
+            </div>
+            <div class="row justify-content-center mt-5 g-4">
+                <!-- Phone 1 - Login -->
+                <div class="col-auto" data-aos="fade-right" data-aos-delay="100">
+                    <div class="phone-frame">
+                        <div class="phone-screen" style="background: linear-gradient(160deg, #1e1b4b 0%, #4F46E5 100%)">
+                            <div class="phone-notch"></div>
+                            <div class="p-4 pt-5 text-center text-white">
+                                <div class="phone-logo mb-3"><i class="fa-solid fa-bolt"></i></div>
+                                <p class="small fw-bold mb-1">Welcome Back</p>
+                                <p class="small opacity-50 mb-4">Sign in to continue</p>
+                                <div class="phone-input mb-2">
+                                    <i class="fa-solid fa-envelope me-2 opacity-50 small"></i>
+                                    <span class="small opacity-50">Email Address</span>
+                                </div>
+                                <div class="phone-input mb-3">
+                                    <i class="fa-solid fa-lock me-2 opacity-50 small"></i>
+                                    <span class="small opacity-50">Password</span>
+                                </div>
+                                <div class="phone-btn mb-3">Sign In</div>
+                                <p class="small opacity-50">Don't have an account? <span class="text-warning">Register</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-center mt-3 small text-muted fw-bold">Login Screen</p>
+                </div>
+                <!-- Phone 2 - Dashboard -->
+                <div class="col-auto" data-aos="fade-up" data-aos-delay="200">
+                    <div class="phone-frame featured">
+                        <div class="phone-screen" style="background:#f8fafc;">
+                            <div class="phone-notch dark"></div>
+                            <div class="p-3 pt-4">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <div>
+                                        <p class="small text-muted mb-0">Good Morning</p>
+                                        <p class="fw-bold mb-0 small">Jihad Dev 👋</p>
+                                    </div>
+                                    <div class="phone-avatar-sm">JD</div>
+                                </div>
+                                <!-- Mini stats -->
+                                <div style="background: linear-gradient(135deg,#4F46E5,#0ea5e9); border-radius:12px; padding:12px; color:white;" class="mb-3">
+                                    <p class="mb-1 opacity-75" style="font-size:10px;">Total Balance</p>
+                                    <p class="fw-bold mb-0" style="font-size:18px;">$48,200.00</p>
+                                    <p class="opacity-75 mb-0" style="font-size:9px;">↑ 12% this month</p>
+                                </div>
+                                <!-- Quick Actions -->
+                                <div class="d-flex gap-2 mb-3">
+                                    <div class="phone-action"><i class="fa-solid fa-arrow-up" style="font-size:10px;"></i><span>Send</span></div>
+                                    <div class="phone-action"><i class="fa-solid fa-arrow-down" style="font-size:10px;"></i><span>Receive</span></div>
+                                    <div class="phone-action"><i class="fa-solid fa-wallet" style="font-size:10px;"></i><span>Wallet</span></div>
+                                    <div class="phone-action"><i class="fa-solid fa-ellipsis" style="font-size:10px;"></i><span>More</span></div>
+                                </div>
+                                <!-- Transaction list -->
+                                <p class="fw-bold mb-2" style="font-size:11px;">Recent Transactions</p>
+                                <div class="phone-tx-item"><i class="fa-solid fa-bag-shopping text-primary" style="font-size:10px;"></i><span>Shopping</span><span class="ms-auto text-danger">-$45</span></div>
+                                <div class="phone-tx-item"><i class="fa-solid fa-briefcase text-success" style="font-size:10px;"></i><span>Freelance</span><span class="ms-auto text-success">+$320</span></div>
+                                <div class="phone-tx-item"><i class="fa-solid fa-utensils text-warning" style="font-size:10px;"></i><span>Food</span><span class="ms-auto text-danger">-$25</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-center mt-3 small text-muted fw-bold">Dashboard Screen</p>
+                </div>
+                <!-- Phone 3 - Profile -->
+                <div class="col-auto" data-aos="fade-left" data-aos-delay="300">
+                    <div class="phone-frame">
+                        <div class="phone-screen" style="background:#fff;">
+                            <div class="phone-notch dark"></div>
+                            <div style="background: linear-gradient(135deg,#f43f5e,#f97316); padding:30px 16px 50px; text-align:center; color:white;">
+                                <div class="phone-profile-avatar mx-auto mb-2">JD</div>
+                                <p class="fw-bold mb-0 small">Jihad Dev</p>
+                                <p class="small opacity-75 mb-0">UI/UX & Full Stack</p>
+                            </div>
+                            <div class="p-3" style="margin-top:-20px;">
+                                <div class="phone-profile-card mb-2">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="text-center flex-fill"><p class="fw-bold mb-0" style="font-size:14px;">50</p><p style="font-size:9px;" class="text-muted mb-0">Projects</p></div>
+                                        <div class="text-center flex-fill border-start border-end"><p class="fw-bold mb-0" style="font-size:14px;">12</p><p style="font-size:9px;" class="text-muted mb-0">Clients</p></div>
+                                        <div class="text-center flex-fill"><p class="fw-bold mb-0" style="font-size:14px;">5★</p><p style="font-size:9px;" class="text-muted mb-0">Rating</p></div>
+                                    </div>
+                                </div>
+                                <div class="phone-menu-item"><i class="fa-solid fa-user text-primary"></i><span>Edit Profile</span><i class="fa-solid fa-chevron-right ms-auto text-muted"></i></div>
+                                <div class="phone-menu-item"><i class="fa-solid fa-bell text-warning"></i><span>Notifications</span><i class="fa-solid fa-chevron-right ms-auto text-muted"></i></div>
+                                <div class="phone-menu-item"><i class="fa-solid fa-shield text-success"></i><span>Privacy</span><i class="fa-solid fa-chevron-right ms-auto text-muted"></i></div>
+                                <div class="phone-menu-item"><i class="fa-solid fa-right-from-bracket text-danger"></i><span class="text-danger">Logout</span><i class="fa-solid fa-chevron-right ms-auto text-muted"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-center mt-3 small text-muted fw-bold">Profile Screen</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-center text-white-50">
+        <p class="mb-0 small">UI & Design Showcase — Web Porto Jihad &copy; <?= date('Y') ?>. Built with HTML, CSS, JS & Bootstrap 5.</p>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
